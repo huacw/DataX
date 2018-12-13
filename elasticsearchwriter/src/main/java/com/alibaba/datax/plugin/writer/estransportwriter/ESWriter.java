@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package com.alibaba.datax.plugin.writer.estransportwriter;
 
 import com.alibaba.datax.common.element.Column;
 import com.alibaba.datax.common.element.Record;
@@ -22,7 +22,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.util.*;
 import java.util.concurrent.Callable;
 

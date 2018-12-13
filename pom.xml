@@ -44,6 +44,7 @@
         <module>core</module>
         <module>transformer</module>
 
+        <module>estransportwriter</module>
         <!-- reader -->
         <module>mysqlreader</module>
         <module>drdsreader</module>
@@ -189,8 +190,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>${project-sourceEncoding}</encoding>
                 </configuration>
             </plugin>
