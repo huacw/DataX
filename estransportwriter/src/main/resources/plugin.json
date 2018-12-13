@@ -1,0 +1,6 @@
+{
+    "name": "estransportwriter",
+    "class": "com.alibaba.datax.plugin.writer.estransportwriter.ESTransportWriter",
+    "description": "适用于: 生产环境.  原理: TODO",
+    "developer": "mtime"
+}
