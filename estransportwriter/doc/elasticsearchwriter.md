@@ -33,7 +33,7 @@
         "writer": {
           "name": "elasticsearchwriter",
           "parameter": {
-            "endpoint": "http://xxx:9999",
+            "endpoint": "xxx:9999,xxx:9999",
             "accessId": "xxxx",
             "accessKey": "xxxx",
             "index": "test-1",
