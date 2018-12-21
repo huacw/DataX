@@ -400,11 +400,16 @@ public class ESTransportWriter extends Writer {
                                 boolean failed = repons.isFailed();
                                 if (!failed) {
                                     successCount++;
+                                    continue;
+                                }
+                                String failureMessage = repons.getFailureMessage();
+                                if (StringUtils.isBlank(failureMessage)) {
+                                    failureMessage = repons.getFailure().getMessage();
                                 }
                                 getTaskPluginCollector().collectDirtyRecord(writerBuffer.get(i),
                                                                             String.format("status:[%s], error: %s",
                                                                                           String.valueOf(failed),
-                                                                                          repons.getFailureMessage()));
+                                                                                          failureMessage));
                             }
 
                             return successCount;
